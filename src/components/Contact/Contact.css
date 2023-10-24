@@ -1,0 +1,109 @@
+.div__contactForm {
+  width: 100%;
+  margin-top: 5%;
+  animation: scaleUp 1.5s ease-in-out forwards;
+}
+
+.contactForm {
+  width: 90%;
+  min-height: 500px;
+  max-height: 900px;
+  max-width: 440px;
+  background: #e6e6e6;
+  border-radius: 30px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: auto;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.contactForm i {
+  color: #a88f00;
+  margin: 0px 10px 0 0; 
+}
+
+.contactForm_p {
+  margin-top: 15px;
+  color: red;
+}
+
+.contactForm h2 {
+  margin: 10px auto 20px auto;
+  width: 60%;
+  color: #a88f00;
+  border-bottom: 3px solid #bbbbbb;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.contactForm label {
+  color: #a88f00;
+  font-size: 22px;
+}
+
+.contactForm input, textarea {
+  width: 90%;
+  padding: 15px 0 10px 0;
+  font-size: 16px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 1s;
+  border-bottom: 2px solid #bebed2;
+}
+
+.contactForm textarea{
+  margin-top: 20px;
+  padding: 0px 0 0px 0;
+  font-size: 16px;
+  max-height: 30px;
+}
+.contactForm input:focus, textarea:focus{
+  border-bottom: 2px solid #bda000;
+}
+
+.formButton {
+  float: right;
+  padding: 10px 15px;
+  margin-top: -25px;
+  margin-right: 35px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #a0a0a3;
+  background: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+  color: #a88f00;
+}
+
+.formButton:hover {
+  background-color: #a88f00;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.notificationMessage {
+  text-align: center;
+  color: greenyellow;
+  font-size: 18px;
+  margin: 10px;
+}
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}  

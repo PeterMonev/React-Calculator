@@ -1,0 +1,133 @@
+  .calculator{
+    position:relative;
+      width:370px;
+      height:520px;
+      margin: 5% auto;
+      background: rgb(2,0,36);
+      background: linear-gradient(320deg, rgba(2,0,36,1) 21%, rgba(255,180,1,1) 55%);
+      border-radius:30px;
+      box-shadow:0px -100px 500px 80px rgba(255,255,255,0.2),
+                  0px -130px 800px 30px rgba(255,140,30,0.1),
+                  inset 0px -11px 30px rgba(55,45,35,0.6),
+                  inset 0px -7px 8px rgba(55,45,35,0.7),
+                  inset 0px -1px 1px rgba(255,255,255,0.4),
+                  inset 0px 20px 3px rgba(255,255,255,0.2),
+                  0px 17px 27px rgba(0,0,0,0.7),
+                  0px 4px 3px rgba(0,0,0,0.8),
+                  -2px -2px 2px rgba(0,0,0,0.5),
+                  inset 1px 1px 1px rgba(255,255,255,0.5),
+                  inset 0px 2px 2px rgba(0,0,0,0.2),
+                  inset 1px 0px 2px rgba(0,0,0,0.4),
+                  inset -1px 0px 2px rgba(0,0,0,0.4);
+      animation: slideLeft 1.5s ease-in-out forwards;
+  }
+
+  .calculator .display{
+      position:relative;
+      display:block;
+      width: 310px;
+      height:60px;
+      line-height:43px;
+      margin:auto;
+      top:40px;
+      font-family:digital-7;
+      font-size: 32px;
+      text-align:right;
+      padding: 7px 15px 0 0;
+      box-sizing:border-box;
+      background:rgba(151, 231, 1, 0.7);
+      border-radius:60px;
+      border:3px solid rgba(255,255,255,0.7);
+      box-shadow:inset 0px -3px 10px rgba(0,0,0,0.05),
+                  inset 1px 3px 9px rgba(0,0,0,0.3),
+                  inset 1px 1px 1px rgba(0,0,0,0.2),
+                  inset -1px -1px 1px rgba(0,0,0,0.1),
+                  inset 0px 2px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .calculator .section__button{
+      float:left;
+      height:400px;
+      width:300px;
+      margin:70px 20px 0px 40px;
+  }
+  .calculator .section__button button{
+      position:relative;
+      width:54px;
+      height:54px;
+      text-align:center;
+      font-size:30px;
+      color: rgba(0,0,0,0.15);
+      text-shadow:1px 1px 2px rgba(255,255,255,1),
+                  0px 0 0 #000,
+                  0px 1px 1px rgba(255,255,255,1);
+      margin: 7px;
+      background: rgb(253, 253, 253);
+      border-radius: 30px;
+      border:1px solid;
+      box-shadow:inset 0px -2px 3px 3px rgba(80,50,40,0.2),
+                  0px 2px 2px rgba(0,0,0,0.8),
+                  inset 0px -1px 1px rgba(255,255,255,0.5),
+                  inset 0px -2px 2px rgba(70,50,40,0.8),
+                  inset 0px -7px 2px rgba(90,50,40,0.3),
+                  0px 0px 6px 2px rgba(150,130,100,1),
+                  0px 0px 0px 5px rgba(255,255,255,0.5),
+                  0px 0px 6px 6px rgba(0,0,0,0.1),
+                  0px 2px 3px rgba(150,130,100,0.8),
+                  0px 4px 1px 1px rgba(255,255,255,0.7);
+  }
+  
+  .calculator .section__button button.operations{
+    margin-left:30px;
+    background: yellow;
+    text-shadow: 1px 1px 1px rgba(255,255,255,1), 0px 0 0 #692C01, 0px 1px 1px rgba(255,255,255,1);
+  }
+  
+  .calculator .section__button button.commands{
+    margin-left:30px;
+    background: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px rgba(255,255,255,1), 0px 0 0 #692C01, 0px 1px 1px rgba(255,255,255,1);
+  }
+  
+  .calculator .section__button button:after{
+      position:absolute;
+      width:45px;
+      height:50px;
+      top:7px;
+      left:4px;
+      border-radius: 20px;
+  }
+  
+  .calculator .section__button button:active{
+      top: 5px;
+      box-shadow:inset 0px -2px 3px 3px rgba(80,50,40,0.2),
+                  0px -1px 2px rgba(0,0,0,0.8),
+                  inset 0px -1px 1px rgba(255,255,255,0.5),
+                  inset 0px -2px 2px rgba(70,50,40,0.8),
+                  inset 0px -7px 2px rgba(90,50,40,0.3),
+                  0px -3px 6px 2px rgba(150,130,100,1),
+                  0px -3px 0px 5px rgba(255,255,255,0.5),
+                  0px -3px 6px 6px rgba(0,0,0,0.1),
+                  0px -1px 3px rgba(150,130,100,0.8),
+                  0px 1px 1px 1px rgba(255,255,255,0.7);
+  }
+  
+  .calculator .section__button button:focus, .calculator .section__button button:hover{
+      border: 3px solid;
+      color: rgba(0, 255, 30, 0.801);
+      text-shadow:1px 1px 2px rgba(255,255,255,1),
+                  0px 0 0 #000,
+                  0px 1px 1px rgba(255,255,255,1);
+  }
+  
+  @keyframes slideLeft{
+    0% {
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+
+    100% {
+      transform: translateX(0px);
+        opacity: 1;
+    }
+}  
