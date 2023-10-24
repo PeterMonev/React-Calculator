@@ -1,0 +1,87 @@
+.section__blogs {
+    width: 90%;
+    margin: auto;
+    animation: slideRigth 1.5s ease-in-out forwards;
+}
+
+.section__blogs h1 {
+    color: #a88f00;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+table{
+   width: 80%;
+   margin: auto;
+   color: #a88f00;
+   font-size: 20px;
+   background-color: whitesmoke;
+   box-shadow: 0 0 40px -10px #000;
+   border-radius: 30px;
+   padding: 20px;
+   border-collapse: collapse;
+}
+
+thead {
+    text-decoration: underline;
+}
+
+thead tr {
+    font-size: 24px;
+} 
+
+th {
+    background-color: wheat;
+    padding: 10px;
+}
+
+th:nth-child(1){
+    border-radius: 30px 0px 0px 0;
+}
+
+th:nth-child(3){
+    border-radius: 0px 30px 0px 0;
+}
+
+table a {
+    color: #a88f00 ;
+    text-decoration: none;
+}
+
+td {
+    padding: 10px 50px 10px 50px;
+    animation: slideLeftTd 1.5s ease-in-out forwards;
+}
+
+.notingFind_p {
+    text-align: center;
+    font-size: 42px;
+    color: #a88f00;
+    margin: 5%;
+}
+
+@keyframes slideRigth{
+   0% {
+    transform: translateX(800px);
+    opacity: 0;
+   }
+
+   100% {
+       transform: translateX(0);
+        opacity: 1;
+   }
+}
+
+@keyframes slideLeftTd {
+    0% {
+        transform: translateX(-1500px);
+        opacity: 0;
+       }
+    
+       100% {
+           transform: translateX(0);
+            opacity: 1;
+       }
+}
