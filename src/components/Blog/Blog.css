@@ -24,6 +24,7 @@ table{
    border-collapse: collapse;
 }
 
+
 thead {
     text-decoration: underline;
 }
@@ -51,7 +52,7 @@ table a {
 }
 
 td {
-    padding: 10px 50px 10px 50px;
+    padding: 1.5% 3% 1.5% 3%;
     animation: slideLeftTd 1.5s ease-in-out forwards;
 }
 
